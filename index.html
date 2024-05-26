@@ -11,97 +11,104 @@
 
   <body>
     
-    <main>  
-        <svg viewBox="0 0 250 30" xmlns="http://www.w3.org/2000/svg">
-            <line x1="0" y1="0" x2="250" y2="0" stroke="#4F4F4F" />
-        </svg>
+    <header>  
+        <div class="svg-container">
+            <svg viewBox="0 0 250 30" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0" y1="0" x2="250" y2="0" stroke="#4F4F4F" />
+            </svg>        
+        </div>
         
         <div class="container__menu"  data-aos="fade-down" data-aos-delay="50">
             <span id="year"></span>
-
             <h1 class="title">Meu Portfólio</h1>
-
-            <div class="menu__details">
+            <nav class="menu__details">
                 <a href="#section--1">Sobre</a>
                 <a href="#section--2">Projetos</a>
                 <a href="">Currículo</a>
-            </div>
+            </nav>
         </div>
+    </header>
+
+    <main>
+        <section id="section--1">
+            <div data-aos="zoom-out-left"
+                data-aos-delay="250">
+                <h1 class="title__about"
+                data-aos="zoom-out-left"
+                data-aos-delay="250">
+                Sobre</h1>
+                <div class="container">
+                    <div class="box__container">
+                        <p class="p__about">
+                            Meu nome é Naiara Pacheco, nasci em 2000 e sou estudante de Análise e Desenvolvimento de Sistemas.
+                            <br><br>
+                            Sempre apreciei desafios e encontrei na programação uma oportunidade de me colocar em situações que me tiram da zona de conforto.
+                            <br><br>
+                            Acredito que o estudo é fundamental e, na programação, a 'mágica' acontece através de horas de codificação, aprendendo com erros e acertos.
+                            <br><br>
+                            Atualmente, dedico meu tempo livre aos estudos, consciente de que minha jornada está apenas começando.
+                            <br><br>
+                            Estou feliz e animada para os novos desafios!  
+                        </p>
+                    </div>
+                    <div class="image__container container">
+                        <img src="./img/image4.jpg" alt="Photo" class="__perfil">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section--2">
+            <div class="container-project">
+                <div class="box__title">
+                    <h1 class="project__title"
+                    data-aos="zoom-out-left"
+                    data-aos-delay="250"
+                    >Projetos</h1>
+                </div>
+
+                <div class="container__projects">
+                    <div class="containers" data-aos="fade-up" data-aos-delay="150">
+                        <a href="" target="_blank"><img src="./img/project.png" alt="Projeto 1"></a>
+                    </div>
+
+                    <div class="containers" data-aos="fade-up" data-aos-delay="150">
+                        <a href="" target="_blank"><img src="./img/project.png" alt="Projeto 2"></a>
+                    </div>
+
+                    <div class="containers" data-aos="fade-up" data-aos-delay="150">
+                        <a href="" target="_blank"><img src="./img/project.png" alt="Projeto 3"></a>
+                    </div>
+                </div>
+
+                <div class="container--icons">
+                    <img src="./img/icons8-javascript.gif" alt="Logo Javascript">
+                    <img src="./img/icons8-react-js.gif" alt="Logo React">
+                    <img src="./img/icons8-code.gif" alt="Logo HTML">
+                </div>
+            </div>
+        </section>
     </main>
 
-    <section id="section--1">
-        <div data-aos="zoom-out-left"
-            data-aos-delay="250">
-            <h1 class="title__about"
-            data-aos="zoom-out-left"
-            data-aos-delay="250">
-            Sobre</h1>
-
-            <div class="container">
-                <div class="box__container">
-                    <p class="p__about">
-                        Meu nome é Naiara Pacheco, nasci em 2000 e sou estudante de Análise e Desenvolvimento de Sistemas.
-                        <br><br>
-                        Sempre apreciei desafios e encontrei na programação uma oportunidade de me colocar em situações que me tiram da zona de conforto.
-                        <br><br>
-                        Acredito que o estudo é fundamental e, na programação, a 'mágica' acontece através de horas de codificação, aprendendo com erros e acertos.
-                        <br><br>
-                        Atualmente, dedico meu tempo livre aos estudos, consciente de que minha jornada está apenas começando.
-                        <br><br>
-                        Estou feliz e animada para os novos desafios!  
-                    </p>
-                </div>
-                <div class="image__container">
-                    <img src="./img/image4.jpg" alt="Photo" class="__perfil">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="section--2">
-        <div class="box__title">
-            <h1 class="project__title"
-            data-aos="zoom-out-left"
-            data-aos-delay="250"
-            >Projetos</h1>
-        </div>
-
-        <div class="container__projects">
-            <div class="containers" data-aos="fade-up" data-aos-delay="150">
-                <a href="" target="_blank"><img src="./img/project.png" alt="Projeto 1"></a>
-            </div>
-
-            <div class="containers" data-aos="fade-up" data-aos-delay="150">
-                <a href="" target="_blank"><img src="./img/project.png" alt="Projeto 2"></a>
-            </div>
-
-            <div class="containers" data-aos="fade-up" data-aos-delay="150">
-                <a href="" target="_blank"><img src="./img/project.png" alt="Projeto 3"></a>
-            </div>
-        </div>
-
-         <div class="container--icons">
-            <img src="./img/icons8-javascript.gif" alt="Logo Javascript">
-            <img src="./img/icons8-react-js.gif" alt="Logo React">
-            <img src="./img/icons8-code.gif" alt="Logo HTML">
-        </div>
-    </section>
-
     <!-- MODAL -->
-    <div class="modal hidden">
-        <button class="close--modal">&times;</button>
-        <h2 class="modal__header">Olá, 👋 <br> segue meu e-mail abaixo </h2>
-        <a href="mailto:naiarapachecosantos@gmail.com" class="link-email">naiarapachecosantos@gmail.com</a>
-    </div>
-    <div class="overlay hidden"></div>    
+    <section>
+        <div class="modal hidden">
+            <button class="close--modal">&times;</button>
+            <h2 class="modal__header">Olá, 👋 <br> segue meu e-mail abaixo </h2>
+            <a href="mailto:naiarapachecosantos@gmail.com" class="link-email">naiarapachecosantos@gmail.com</a>
+        </div>
+        <div class="overlay hidden"></div>    
+    </section>
 
     <!-- BTN SCROLL -->
-    <button id="scrollTo" 
-        class="btn__seta"
-        data-aos="zoom-in-up"
-        data-aos-delay="400">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>     
-    </button>
+    <section>
+        <button id="scrollTo" 
+            class="btn__seta"
+            data-aos="zoom-in-up"
+            data-aos-delay="400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>     
+        </button>
+    </section>
 
     <footer>
         <h1 class="text__footer">
@@ -139,7 +146,6 @@
     </footer>
 
     <script src="./scripts.js"></script>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
