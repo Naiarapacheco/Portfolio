@@ -12,6 +12,7 @@
     --margin-small: 1rem;
 }
 
+/* Global Styles */
 * {
     padding: 0;
     margin: 0;
@@ -19,20 +20,32 @@
     color: var(--font-color);
 }
 
-main {
+/* Layout */
+header {
     display: flex;
-    margin: var(--margin-medium);
     flex-direction: column;
+    margin: var(--margin-medium);
     height: 100vh;
 }
 
-span {
+/* SVG Container */
+.svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.svg-container svg {
+    width: 100%;
+}
+
+#year {
     font-size: 1.2rem;
 }
 
 .container__menu {
-    margin-top: var(--margin-large);
-    margin-bottom: calc(var(--margin-large) * 1.7);
+    margin: var(--margin-large) 0 calc(var(--margin-large) * 1.7) 0;
 }
 
 .title {
@@ -73,14 +86,29 @@ a:hover {
     color: var(--hover-color);
 }
 
-#section--1,
-#section--2 {
-    height: 100vh;
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    #year {
+        font-size: 1rem;
+    }
+
+    .container__menu {
+        margin-top: 12rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        letter-spacing: 15px;
+    }
+
+    .menu__details a {
+        font-size: 1.2rem;
+        margin-top: 15px;
+        margin-right: 12px;
+    }
 }
 
-/* ------------------------------------------------------ */
-
-
+/* About Section */
 .title__about {
     font-size: 2.5rem;
     margin-left: var(--margin-medium);
@@ -100,6 +128,7 @@ a:hover {
     background-color: var(--box-bg-color);
     box-shadow: var(--box-shadow);
     border-radius: 5px;
+    overflow-wrap: break-word;
 }
 
 .p__about {
@@ -116,12 +145,9 @@ a:hover {
     border-radius: 15px;
 }
 
-/* ------------------------------  */
-
+/* Projects Section */
 .box__title {
-    margin-left: var(--margin-medium);
-    margin-top: calc(var(--margin-large) * 3.5);
-    margin-bottom: calc(var(--margin-large) * 5);
+    margin: calc(var(--margin-large) * 3.5) 0 calc(var(--margin-large) * 5) var(--margin-medium);
 }
 
 .project__title {
@@ -153,7 +179,7 @@ a:hover {
     object-fit: cover;
     border-radius: inherit;
     cursor: pointer;
-    transition: transform(0.2s);
+    transition: transform 0.2s;
 }
 
 .containers img:hover {
@@ -167,8 +193,29 @@ a:hover {
     align-items: center;
 }
 
-/* ------------------------------------- */
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .title__about,
+    .project__title {
+        font-size: 1.9rem;
+    }
+
+    .p__about {
+        margin-top: 3rem;
+        margin-left: 4rem;
+        font-size: 0.85rem;
+    }
+
+    .container-project {
+        margin-top: 25rem;
+    }
+}
+
+/* Footer */
 footer {
     display: flex;
     align-items: center;
@@ -183,7 +230,6 @@ footer {
 
 .text__footer {
     color: var(--font-color);
-    font: normal;
     letter-spacing: 1px;
     margin-bottom: 1rem;
 }
@@ -212,8 +258,7 @@ footer {
     }
 }
 
-/* -------------------------------------- */
-
+/* Button */
 .btn__seta {
     position: fixed;
     bottom: 14px;
@@ -233,21 +278,21 @@ footer {
     cursor: pointer;
 }
 
-/* ------------------------------------------- */
-
+/* Hidden Class */
 .hidden {
     visibility: hidden;
     opacity: 0;
 }
 
+/* Modal */
 .modal {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f3f3f3;
+    background-color: var(--bg-color);
     padding: 5rem 6rem;
-    box-shadow: 0 rem 6rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6rem rgba(0, 0, 0, 0.3);
     z-index: 1000;
     transition: all 0.5s;
 }
@@ -292,4 +337,32 @@ footer {
     backdrop-filter: blur(1.2px);
     z-index: 100;
     transition: all 0.5s;
+}
+
+@media screen and (max-width:800px) {
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-wrap: break-word;
+    }
+
+    .text__footer {
+        font-size: 0.95rem;
+    }
+
+    .social__media {
+        font-size: 0.90rem;
+        text-align: center;
+    }
+
+    .svg__footer {
+        text-align: center;
+    }
+
+    #scrollTo {
+        height: 4rem;
+        width: 4rem;
+    }
 }
