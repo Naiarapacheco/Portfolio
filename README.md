@@ -27,5 +27,5 @@
   
   <h2>🌐 Access Online</h2>
   <p>
-    Explore the portfolio live at <a href="http://your-portfolio-link.com">My Portfolio</a>.
+    Explore the portfolio live at <a href="https://portfoliopriod.netlify.app">My Portfolio</a>.
   </p>
