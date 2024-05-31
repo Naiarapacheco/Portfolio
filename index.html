@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <title>Naiara | Portfólio</title>
+    <title>Naiara Portfólio</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" href="./img/bluesky-fill.svg" type="image/x-icon">
   </head>
 
   <body>
@@ -51,7 +53,7 @@
                             Estou feliz e animada para os novos desafios!  
                         </p>
                     </div>
-                    <div class="image__container container">
+                    <div class="image__container">
                         <img src="./img/image4.jpg" alt="Photo" class="__perfil">
                     </div>
                 </div>
@@ -69,19 +71,34 @@
 
                 <div class="container__projects">
                     <div class="containers" data-aos="fade-up" data-aos-delay="150">
-                        <a href="" target="_blank"><img src="./img/project.png" alt="Projeto 1"></a>
+                        <a href="https://phoneweby.netlify.app" target="_blank">
+                            <video src="./videos/first project.mkv"
+                             autoplay loop muted
+                             >
+                            </video>
+                        </a>
                     </div>
 
                     <div class="containers" data-aos="fade-up" data-aos-delay="150">
-                        <a href="" target="_blank"><img src="./img/project.png" alt="Projeto 2"></a>
+                        <a href="https://bankaaccount.netlify.app/" target="_blank">
+                            <video src="./videos/third project.mkv"
+                             autoplay loop muted
+                             >
+                            </video>
+                        </a>
                     </div>
 
                     <div class="containers" data-aos="fade-up" data-aos-delay="150">
-                        <a href="" target="_blank"><img src="./img/project.png" alt="Projeto 3"></a>
+                        <a href="https://newebhair.netlify.app/" target="_blank">
+                            <video src="./videos/second project.mkv"
+                             autoplay loop muted
+                             >
+                            </video>
+                        </a>
                     </div>
                 </div>
 
-                <div class="container--icons">
+                <div class="container__icons">
                     <img src="./img/icons8-javascript.gif" alt="Logo Javascript">
                     <img src="./img/icons8-react-js.gif" alt="Logo React">
                     <img src="./img/icons8-code.gif" alt="Logo HTML">
@@ -90,29 +107,9 @@
         </section>
     </main>
 
-    <!-- MODAL -->
-    <section>
-        <div class="modal hidden">
-            <button class="close--modal">&times;</button>
-            <h2 class="modal__header">Olá, 👋 <br> segue meu e-mail abaixo </h2>
-            <a href="mailto:naiarapachecosantos@gmail.com" class="link-email">naiarapachecosantos@gmail.com</a>
-        </div>
-        <div class="overlay hidden"></div>    
-    </section>
-
-    <!-- BTN SCROLL -->
-    <section>
-        <button id="scrollTo" 
-            class="btn__seta"
-            data-aos="zoom-in-up"
-            data-aos-delay="400">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>     
-        </button>
-    </section>
-
     <footer>
         <h1 class="text__footer">
-            FRONT END DEVELOPER
+            FRONT-END DEVELOPER
         </h1>
         <div class="box__footer">
             <h2 class="social__media">Redes sociais</h2>
@@ -144,6 +141,23 @@
             </div>
         </div>
     </footer>
+
+    <!-- MODAL -->
+    <div class="modal hidden">
+        <button class="close--modal">&times;</button>
+            <h2 class="modal__header">Olá, 👋 <br> segue meu e-mail abaixo </h2>
+            <a href="mailto:naiarapachecosantos@gmail.com" class="link-email">naiarapachecosantos@gmail.com</a>
+        </div>
+    <div class="overlay hidden"></div>    
+
+    <!-- BTN SCROLL -->
+    <button id="scrollTo"
+        class="btn__seta"
+        data-aos="zoom-in-up"
+        data-aos-delay="400">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up icon__seta"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>     
+    </button>
 
     <script src="./scripts.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
