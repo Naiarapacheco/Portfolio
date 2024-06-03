@@ -26,7 +26,7 @@ html {
 }
 
 section {
-    padding-block: 5rem;
+    padding-block: 0 4rem;
 }
 
 /* Layout */
@@ -283,11 +283,19 @@ a:hover {
     transform: translateY(0);
 }
 
+
 .portfolio__description p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #fff;
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 0.75rem;
+}
+
+.center {
+    text-align: center;
 }
 
 .icone__share {
@@ -312,7 +320,6 @@ a:hover {
 }
 
 @media screen and (max-width: 1000px) {
-    .container,
     .container__projects {
         flex-direction: column;
         align-items: center;
@@ -325,9 +332,8 @@ a:hover {
     }
 
     .p__about {
-        margin-top: 3rem;
-        margin-left: 4rem;
         font-size: 0.85rem;
+        margin: 0;
     }
 
     .container-project {
@@ -354,7 +360,7 @@ footer {
 }
 
 .social__media {
-    margin-bottom: var(--margin-small);
+    margin-bottom: 1.4rem;
     color: var(--text-color);
     text-align: center;
 }
@@ -372,6 +378,7 @@ footer {
     from {
         transform: translateY(0) scale(1);
     }
+
     to {
         transform: translateY(-8px) scale(1.1);
     }
@@ -462,6 +469,20 @@ footer {
     #scrollTo {
         height: 4rem;
         width: 4rem;
+    }
+    .container__about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .p__about{
+        margin: 0;
+    }
+    .portfolio__description p{
+        font-size: 0.95rem;
+    }
+    .portfolio__description .slice{
+        font-size: 0.75rem;
     }
 }
 
