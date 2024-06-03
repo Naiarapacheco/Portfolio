@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <title>Naiara Portfólio</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="icon" href="./img/bluesky-fill.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+    rel="stylesheet"/>
+    <title>Naiara Pacheco</title>
   </head>
 
   <body>
@@ -33,32 +35,65 @@
 
     <main>
         <section id="section--1">
-            <div data-aos="zoom-out-left"
-                data-aos-delay="250">
-                <h1 class="title__about"
-                data-aos="zoom-out-left"
-                data-aos-delay="250">
-                Sobre</h1>
-                <div class="container">
-                    <div class="box__container">
-                        <p class="p__about">
-                            Meu nome é Naiara Pacheco, nasci em 2000 e sou estudante de Análise e Desenvolvimento de Sistemas.
-                            <br><br>
-                            Sempre apreciei desafios e encontrei na programação uma oportunidade de me colocar em situações que me tiram da zona de conforto.
-                            <br><br>
-                            Acredito que o estudo é fundamental e, na programação, a 'mágica' acontece através de horas de codificação, aprendendo com erros e acertos.
-                            <br><br>
-                            Atualmente, dedico meu tempo livre aos estudos, consciente de que minha jornada está apenas começando.
-                            <br><br>
-                            Estou feliz e animada para os novos desafios!  
-                        </p>
-                    </div>
-                    <div class="image__container">
-                        <img src="./img/image4.jpg" alt="Photo" class="__perfil">
+            <div data-aos="zoom-out-left" data-aos-delay="250">
+                <div class="container__about">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="./img/image4.jpg" alt="image">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="title__about">Sobre</h1>
+                            <div class="svg-container">      
+                            </div>
+                            <p class="p__about">
+                                Olá, meu nome é Naiara, nasci em 2000 e sou estudante de Análise e Desenvolvimento de Sistemas.
+                                Sempre apreciei desafios e encontrei na programação uma oportunidade de me colocar em situações que me tiram da zona de conforto.
+                                Acredito que o estudo é fundamental e, na programação, a 'mágica' acontece através de horas de codificação, aprendendo com erros e acertos.
+                                Atualmente, dedico meu tempo livre aos estudos, consciente de que minha jornada está apenas começando.⚡
+                            </p>
+                            <div class="tab__titles">
+                                <p class="tab__links active_link" onclick="openTab(event, 'skills')">Habilidades</p>
+                                <p class="tab__links" onclick="openTab(event, 'education')">Faculdade</p>
+                                <p class="tab__links" onclick="openTab(event, 'experience')">Experiência</p>
+                            </div>
+                            <div class="tab__contents active_content" id="skills">
+                                <ul>
+                                    <li><span>Javascript </span><br>
+                                        <p class="skills"><i class="ri-checkbox-circle-line check"></i> Desenvolvimento de funcionalidades interativas para websites, utilizando técnicas modernas como ES6+ e AJAX.</p>
+                                    </li>
+                                    <li><span>React</span><br>
+                                        <p class="skills"><i class="ri-checkbox-circle-line check"></i> Criação de interfaces de usuário dinâmicas e responsivas, com gerenciamento eficiente de estados e componentes reutilizáveis.</p>
+                                    </li>
+                                    <li><span>Node.js</span><br>
+                                        <p class="skills"><i class="ri-checkbox-circle-line check"></i> Desenvolvimento de servidores e APIs RESTful, permitindo comunicação eficaz entre front-end e back-end.</p>
+                                    </li>
+                                    <li><span>Python</span><br>
+                                        <p class="skills"><i class="ri-checkbox-circle-line check"></i> Desenvolvimento web com os frameworks Flask e Django, focando na criação de aplicações robustas e escaláveis.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab__contents" id="education">
+                                <ul>
+                                    <li><span>Análise e Desenvolvimento de Sistemas</span><br>
+                                        <p class="skills">Instituição de Ensino: Faculdade Impacta<br>
+                                        Conclusão: 2º semestre de 2024</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab__contents" id="experience">
+                                <ul>
+                                    <li><span>Capital Finance LTDA</span><br>
+                                        <p class="skills">**Assistente Pleno de Desenvolvimento de Sistemas**<br>
+                                        - Desenvolvimento front e back-end de sites, utilizando JavaScript, Python e frameworks Django e Flask.<br>
+                                        - Colaboração em equipe para implementação de soluções inovadoras e eficientes.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section>    
 
         <section id="section--2">
             <div class="container-project">
@@ -77,15 +112,12 @@
                              >
                             </video>
                         </a>
-                    </div>
-
-                    <div class="containers" data-aos="fade-up" data-aos-delay="150">
-                        <a href="https://bankaaccount.netlify.app/" target="_blank">
-                            <video src="./videos/third project.mkv"
-                             autoplay loop muted
-                             >
-                            </video>
-                        </a>
+                        <div class="portfolio__description">
+                            <p>Clique na seta para ver o projeto <p class="text-align:center">completo⚡</p></p>
+                            <a href="https://phoneweby.netlify.app" target="_blank">
+                                <i class="ri-share-box-fill icone__share"></i>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="containers" data-aos="fade-up" data-aos-delay="150">
@@ -95,6 +127,27 @@
                              >
                             </video>
                         </a>
+                        <div class="portfolio__description">
+                            <p>Clique na seta para ver o projeto <p class="text-align:center">completo⚡</p></p>
+                            <a href="https://newebhair.netlify.app/" target="_blank">
+                                <i class="ri-share-box-fill icone__share"></i>
+                            </a>
+                        </div>
+                    </div>
+  
+                    <div class="containers" data-aos="fade-up" data-aos-delay="150">
+                        <a href="https://bankaaccount.netlify.app/" target="_blank">
+                            <video src="./videos/third project.mkv"
+                             autoplay loop muted
+                             >
+                            </video>
+                        </a>
+                        <div class="portfolio__description">
+                            <p>EM DESENVOLVIMENTO ⚡</p>
+                            <a href="https://bankaaccount.netlify.app/" target="_blank">
+                                <i class="ri-share-box-fill icone__share"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -108,34 +161,36 @@
     </main>
 
     <footer>
-        <h1 class="text__footer">
-            FRONT-END DEVELOPER
-        </h1>
+        <a href="#section--1">
+            <h1 class="text__footer">
+                FRONT-END DEVELOPER
+            </h1>
+        </a>
         <div class="box__footer">
-            <h2 class="social__media">Redes sociais</h2>
+            <h2 class="social__media">Redes sociais 👨‍💻 </h2>
             <div class="svg__footer">
                 <a href="https://github.com/Naiarapacheco?tab=repositories" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" viewBox="0 0 24 24" fill="none" 
                         stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" 
                         class="feather feather-github">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" style="color: aliceblue;"></path>
                     </svg>
                 </a>
                 <a class="show--modal" style="cursor: pointer;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" viewBox="0 0 24 24" fill="none" 
                         stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" 
                         class="feather feather-mail">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" style="color: aliceblue;"></path>
+                        <polyline points="22,6 12,13 2,6" style="color: aliceblue;"></polyline>
                     </svg>
                 </a>
                 <a>
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" viewBox="0 0 24 24" fill="none" 
                         stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" 
                         class="feather feather-linkedin">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" style="color: aliceblue;"></path>
+                        <rect x="2" y="9" width="4" height="12" style="color: aliceblue;"></rect>
+                        <circle cx="4" cy="4" r="2" style="color: aliceblue;"></circle>
                     </svg>
                 </a>
             </div>
@@ -156,7 +211,7 @@
         data-aos="zoom-in-up"
         data-aos-delay="400">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up icon__seta"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>     
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up icon__seta" style="color: #fff;"><line x1="12" y1="19" x2="12" y2="5" style="color: #fff"></line><polyline points="5 12 12 5 19 12" style="color: #fff"></polyline></svg>     
     </button>
 
     <script src="./scripts.js"></script>
