@@ -34,7 +34,23 @@ document.getElementById('scrollTo').addEventListener('click', function(){
 //GET CURRENT YEAR
 const year = new Date();
 const current_year = year.getFullYear();
-
 document.querySelector('#year').textContent += current_year;
 
+//ABOUT
+let tabLinks = document.getElementsByClassName('tab__links');
+let tabContents = document.getElementsByClassName('tab__contents');
+
+function openTab(event, nomeAba) {
+    event.preventDefault();
+
+    for (let tabLink of tabLinks) {
+        tabLink.classList.remove('active_link');
+    }
+    for (let tabContent of tabContents) {
+        tabContent.classList.remove('active_content');
+    }
+    
+    event.currentTarget.classList.add('active_link');
+    document.getElementById(nomeAba).classList.add('active_content');
+}
 
