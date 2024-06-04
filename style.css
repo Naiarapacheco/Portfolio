@@ -23,6 +23,7 @@
 
 html {
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 section {
@@ -95,28 +96,18 @@ a:hover {
 }
 
 /* Media Queries */
-@media screen and (max-width: 600px) {
-    #year {
-        font-size: 1rem;
-    }
-
+@media screen and (max-width: 768px) {
     .container__menu {
-        margin-top: 12rem;
-    }
-
-    .title {
-        font-size: 2.5rem;
-        letter-spacing: 15px;
-    }
-
-    .menu__details a {
-        font-size: 1.2rem;
-        margin-top: 15px;
-        margin-right: 12px;
-    }
-
-    footer {
         width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container__menu .title{
+        font-size: 2rem;
+        letter-spacing: 15px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -323,32 +314,6 @@ a:hover {
     margin-top: 8rem;
 }
 
-@media screen and (max-width: 1000px) {
-    .container__projects {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .title__about,
-    .project__title {
-        font-size: 1.9rem;
-    }
-
-    .p__about {
-        font-size: 0.85rem;
-        margin: 0;
-    }
-
-    .container-project {
-        margin-top: 25rem;
-    }
-
-    footer {
-        width: 100%;
-    }
-}
-
 /* Footer */
 footer {
     width: 100%;
@@ -511,72 +476,3 @@ footer {
     background-color: var(--box-bg-color);
 }
 
-@media screen and (max-width: 430px) {
-    .svg-container {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .container__menu {
-        margin-top: 5rem;
-    }
-
-    .container__menu .title {
-        font-size: 2.8rem;
-        letter-spacing: 18px;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .container__about {
-        width: 100%;
-    }
-
-    .row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-    }
-
-    .about-col-1 img {
-        width: 250px;
-        margin-bottom: 2rem;
-    }
-
-    .about-col-2 {
-        width: 100%;
-    }
-
-    .p__about {
-        font-size: 0.95rem;
-    }
-
-    .tab__titles {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 5rem;
-    }
-
-    .tab__titles .tab__links {
-        font-size: 0.85rem;
-    }
-
-    .project__title {
-        font-size: 2rem;
-    }
-
-    .container__projects {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .containers {
-        width: 250px;
-    }
-}
