@@ -114,6 +114,10 @@ a:hover {
         margin-top: 15px;
         margin-right: 12px;
     }
+
+    footer {
+        width: 100%;
+    }
 }
 
 /* About Section */
@@ -339,10 +343,15 @@ a:hover {
     .container-project {
         margin-top: 25rem;
     }
+
+    footer {
+        width: 100%;
+    }
 }
 
 /* Footer */
 footer {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -470,18 +479,22 @@ footer {
         height: 4rem;
         width: 4rem;
     }
-    .container__about{
+
+    .container__about {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .p__about{
+
+    .p__about {
         margin: 0;
     }
-    .portfolio__description p{
+
+    .portfolio__description p {
         font-size: 0.95rem;
     }
-    .portfolio__description .slice{
+
+    .portfolio__description .slice {
         font-size: 0.75rem;
     }
 }
@@ -496,4 +509,74 @@ footer {
     border: none;
     cursor: pointer;
     background-color: var(--box-bg-color);
+}
+
+@media screen and (max-width: 430px) {
+    .svg-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container__menu {
+        margin-top: 5rem;
+    }
+
+    .container__menu .title {
+        font-size: 2.8rem;
+        letter-spacing: 18px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .container__about {
+        width: 100%;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .about-col-1 img {
+        width: 250px;
+        margin-bottom: 2rem;
+    }
+
+    .about-col-2 {
+        width: 100%;
+    }
+
+    .p__about {
+        font-size: 0.95rem;
+    }
+
+    .tab__titles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5rem;
+    }
+
+    .tab__titles .tab__links {
+        font-size: 0.85rem;
+    }
+
+    .project__title {
+        font-size: 2rem;
+    }
+
+    .container__projects {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .containers {
+        width: 250px;
+    }
 }
