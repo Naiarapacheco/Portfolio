@@ -280,6 +280,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: calc(var(--margin-large) * 7);
     gap: 10px;
 }
